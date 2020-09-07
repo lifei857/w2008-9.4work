@@ -1,0 +1,368 @@
+header{
+    min-width: 1200px;
+    height: 42px;
+    background: #222222;
+}
+header a{
+    color: #9d9d9d;
+}
+header a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+body , ul , li , a , h1 , h2 , h3 , h4 , h5 , h6{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+ul , li{
+    list-style: none;
+}
+.nav{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.about{
+    display: none;
+}
+::-webkit-scrollbar{width: 0;height: 0;}
+
+.header-box{
+    width: 100vw;   
+    padding: 0 10px;
+    height: 42px;
+    line-height: 42px;
+}
+.small-box{
+    float: left;
+}
+.small-box a{
+    font-size: 18px;
+}
+.xs-box{
+    float: right;
+     line-height: 18px;
+     border: 1px solid #444;
+     padding: 4px 10px;
+     margin: 8px 15px 8px 0;
+     border-radius: 5px;
+     color: #07f7f7;
+     text-align: center;
+ }
+ .xs-box:hover{
+     cursor: pointer;
+     color: #fff;
+ } 
+
+.son-nav{
+    position: absolute;
+    left: 0; top: 42px;
+    background: #222222;
+    width:100vw;
+    padding-left: 10px;
+    text-align: left;
+    height: 0px;
+    transition: height 1s ease;
+    visibility: hidden;
+    overflow: hidden;
+}
+.son-nav li a{
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+    line-height: 24px;
+}
+.small-nav:hover{
+    background: #333333;
+}
+.small-nav:hover>.son-nav{
+
+    visibility: visible;
+    height: 200px;
+}
+.small-logo{
+    width: 164px;
+    height: 100%;
+    float: left;
+}
+.small-logo a{
+    width: 100%;
+    height: 100%;
+    display: block; 
+    line-height: 42px;
+    font-size: 18px;
+} 
+nav{
+    width: 100%;
+    background: linear-gradient(45deg,#020031,#6d3353);
+    padding: 90px 0 110px;
+    color: #fff;
+    margin: auto;
+}
+.nav-bankuai{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-bankuai h1{
+    width: 100vw;
+    height: 60px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-top: 20px;
+}
+.nav-bankuai h2{
+    width: 100vw;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.25;
+    margin-top: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.nav-bankuai a{
+    display: block;
+    color: #fff;
+}
+.nav-bankuai a:nth-of-type(1){
+    width: 300px;
+    height: 54px;
+    margin: 20px auto;
+    padding: 13px 35px 17px 35px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    background-color: #337AB7;
+    box-shadow: inset 0 -4px 0 #23527c;
+    border: 0;
+    color: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.nav-bankuai a:nth-of-type(1):hover{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #286090;
+}
+
+.nav-bankuai a:nth-of-type(2){
+    font-size: 14px;
+    color: hsla(0,0%,100%,.5);
+    line-height: 2;
+}
+.nav-bankuai a:nth-of-type(2):hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+article{
+    width: 100vw;
+    height: auto;
+    padding: 60px 15px 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.article-head{
+    width: 65%;
+    text-align: center;
+    font-weight: 200;
+    display: block;
+    margin: 0 auto 40px;
+    border-bottom: 1px solid #eee;
+}
+.article-head h2{
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    color: inherit;
+}
+.article-head p{
+    line-height: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.article-table{
+    width: 100vw;
+    margin: auto;
+}
+.article-list{
+    margin: 0 auto;
+    text-align: center;
+}
+.article-list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.article-list li{
+    float: left;
+    width: 260px;
+    height: 367px;
+    border: 1px solid #eee;
+    padding: 4px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.article-list li .list-top{
+    display: block;
+    width: 100%;
+    height: 126px;
+    background: #09ddec;
+    color: #fff;
+    box-sizing: border-box;
+}
+.article-list li .list-top span{
+    display: block;
+    font-size: 28px;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+}
+.carticle-list li .list-top span:nth-of-type(2){
+    letter-spacing: 10px;
+    margin-top: -10px;
+}
+.article-list li .list-bottom{
+    height: 200px;
+    padding: 9px;
+    box-sizing: border-box;
+}
+.list-bottom a{
+    display: block;
+    height: 52.8px;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+.list-bottom a span{
+    display: block;
+    color: #337AB7;
+}
+.list-bottom a span:nth-of-type(2){
+    font-size: 16px;
+    padding-top: 4px;
+    color: #777777;
+}
+.list-bottom p{
+    color: #555555;
+    text-indent: 0.5em;
+}
+.list-bottom a:hover span:nth-of-type(1){
+    color: #23527C;
+    transition: all 0.5s ease;
+}
+
+
+
+@media screen and (min-width:700px){
+    .small-box , .small-nav{
+        display: none;
+    }
+    header{
+        min-width: 700px;
+        background: #222;
+        height: 42px;
+    }
+    .header-box{
+        width: 700px;
+        height: 42px;
+        margin: auto;
+        padding: 0 10px;
+    }
+    .small-logo{
+        width: 164px;height: 100%;
+        float: left;
+        display: none;
+    }
+    .small-logo a{
+        display: block;
+        width: 100%; height: 100%;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .nav{
+        width: 678px;
+        height: 100%;
+        margin: auto;
+        display: block;
+    }
+    .nav a{
+        float: left;
+        height: 100%;
+        line-height: 42px;
+        padding:0 2%;
+    }
+    .about{
+        float: right;
+        width: 100px;
+        height: 100%;
+        display: none;
+    }
+    .about a{
+        width: 100px;
+        height: 100%;
+        line-height: 42px;
+    }
+    .nav-bankuai h1{
+        font-size: 90px;
+        height: 89.6px;
+    }
+    .nav-bankuai h2{
+        font-size: 24px;
+        height: 29.6px;
+        letter-spacing: 0;
+    }
+    .article-head{
+        font-size: 42px;
+    }
+}
+
+    @media screen and (min-width:970px){
+        header{
+            min-width: 970px;
+        }
+        .header-box{
+            width: 970px;
+            margin: auto;
+        }
+        .small-logo{
+            display: block;
+        }
+        .about{
+            display: block;
+        }
+        .nav{
+            float: left;
+            display: block;
+        }
+        .nav-bankuai h1{
+            font-size: 100px;
+            height: 100px;
+        }
+        .nav-bankuai h2{
+            font-size: 30px;
+            height: 36.8px;
+            letter-spacing: 0;
+        }
+        .article-head{
+            font-size: 42px;
+        }
+    }
+    @media screen and (min-width:1170px){
+        header{
+            min-width: 1170px;
+        }
+        .header-box{
+            width: 1170px;
+            margin: auto;
+        }
+    } 
